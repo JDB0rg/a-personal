@@ -1,0 +1,7 @@
+<div class="gallery" ng-repeat="remainder in [0,1,2,3] | orderBy: 'createdAt' : true">
+<!-- | orderBy: 'createdAt' : true -->
+    <span ng-repeat="data in userPicFeed.photo" ng-if="$index % 1 == remainder">
+      <img userGallery class="gallery-pic" ng-src="{{data.photo}}">
+    </span>
+
+</div>

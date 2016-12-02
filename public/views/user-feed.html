@@ -1,0 +1,48 @@
+<navbar></navbar>
+<section class="user-container">
+
+    <section class="user-feed-info">
+
+      <div class="profile-info">
+        <h3><div class="profile-user-info">{{userPicFeed.username}}
+          <a ui-sref="edit" class="edit-prof-button" type="button" name="button">Edit Profile</a>
+        </div></h3>
+        <p>{{userPicFeed.name}}</p>
+
+      </div>
+
+    </section>
+
+    <image-user-feed></image-user-feed>
+
+    <!-- <section class="gallery" ng-repeat="data in userPicFeed.photo | orderBy: 'createdAt' : true">
+      <div>
+        <img class="gallery-pic" ng-src="{{data.photo}}">
+      </div>
+
+    </section> -->
+
+    <section class="button-box">
+      <button class="load-button" type="button" name="button">Load More</button>
+    </section>
+
+<footer></footer>
+</section>
+
+<!-- if it breaks delete this area from here -->
+
+<!-- row options for stuff -->
+
+      <!-- <span ng:repeat="(index, value) in array">
+        {{value}}<br ng:show="(index+1)%3==0" />
+      </span>
+
+      <div class="row">
+        <div class="col-md-4" ng-repeat="remainder in [0,1,2]">
+          <span ng-repeat="item in array" ng-if="$index % 3 == remainder">{{item}}</span>
+        </div>
+      </div> -->
+
+<!-- end row options of stuff -->
+
+<!-- delete to here -->

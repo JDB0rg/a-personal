@@ -1,0 +1,26 @@
+<section class="nav-container">
+  <div class="nav-box">
+
+    <section class="logo-nav">
+        <a class="nav-words" ui-sref="feed"><img src="./img/icon6.svg" alt="Upload Image" width="30px" height="30px"/></a>
+    </section>
+    <section>
+        <div class="nav-search">search</div>
+    </section>
+    <section class="main-nav">
+        <a class="nav-words" ui-sref="userFeed"><img src="./img/user2.svg" alt="Upload Image" width="25px" height="25px"/></a>
+        <a class="nav-words" ui-sref="#"><img src="./img/heart4.svg" alt="Upload Image" width="25px" height="25px"/></a>
+
+        <div class="upload-dropdown" name="select gender">
+          <div class="nav-words"><img src="./img/main2.svg" alt="Upload Image" width="22px" height="22px"/></div>
+          <div class="upload-content">
+            Upload image
+              <input type="file" fileread accept="image/*" images="images">
+                  <img ng-src="{{images.Location}}">
+
+          </div>
+        </div>
+    </section>
+
+  </div>
+</section>

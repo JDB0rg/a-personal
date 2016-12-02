@@ -1,0 +1,28 @@
+<section class="login-container">
+
+  <section class="left-box">
+    <div class="login-slide">
+      <img src="../img/slide4.jpg" alt="" />
+    </div>
+  </section>
+
+  <section class="right-box">
+    <div class="input-box">
+
+      <input ng-model="login.email" class="input-field" type="text" name="name" value="" placeholder="Email"><span class="signup-words"></span></input><br>
+      <input ng-model="login.password" class="input-field" type="password" name="name" value="" placeholder="Password"><span class="signup-words"></span></input><br>
+      <button class="input-button" ng-click="userLogin(login)" type="button" name="button"><span class="button-words">Log in</span></button>
+
+      <hr class="style-eight"> or
+    </div>
+    <div class="lower-input-box">
+
+        <p>
+            Don't have an account? <a ui-sref="signup"><span class="login-words">Sign up</span></a>
+        </p>
+
+    </div>
+  </section>
+
+</section>
+<footer></footer>

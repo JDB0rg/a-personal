@@ -1,0 +1,62 @@
+<navbar></navbar>
+
+<section class="mainfeed-container">
+  <section ng-repeat="data in userFeed | orderBy: 'createdAt' : true">
+      <div class="user-info">
+        <div class="feed-user-info"><a ui-sref="userFeed">{{data.author.username}}</a></div>
+        <div ng-model="createdAt.date" ng-model-options="{getterSetter: true}"></div>
+        <!-- <div class="feed-user-counter" ng-bind="createdAt.date()"></div> -->
+        <div class="feed-user-counter" ng-model="createdAt.date" ng-if="true">{{data.createdAt  | date : 'dd MMM'}}</div>
+        <!-- <div class="feed-user-counter" ng-model="createdAt.date" ng-if="false" ng-init="myVar = false"></div> -->
+      </div>
+
+        <img class="profile-pic" ng-src="{{data.photo}}" ng-dblclick="addHearts(data._id)">
+
+      <section>
+        <div class="lower-box">
+          <p class="hearts">
+            <strong>{{data.hearts}} Hearts</strong>
+          </p>
+          <p class="comments">
+            <strong>{{data.author.username}}</strong>
+          </p>
+          <div class="meta-box">
+            <div class="meta-info">
+
+                <button class="button" type="button" name="button" ng-click="addHearts(data._id)">
+                  <img src="./img/heart4.svg" alt="Upload Image" width="25px" height="25px"/>
+                </button>
+                <!-- <div ng-if="currentUser._id === photo.user._id"> -->
+                  <form ng-submit="postStatusComment(user._id); getFeed()">
+                    <input class="comment-box" placeholder="Add Comment">{{data.comments.comment}}</input>
+
+                  </form>
+                </div>
+                <!-- <div class="meta-info">{{data.author.username}}<span>{{data.author.comments}}</span></div> -->
+
+
+
+
+<!-- Add Comment code block/////////////////
+
+<div class="comment" ng-if="currentUser._id !== status.user._id">
+    <form ng-enter="postStatusComment(comment, status._id); getStatus()">
+
+            <div class="input-group">
+                <div class="nametag"> Post as <span>{{currentUser.name.first}}</span></div>
+              <textarea placeholder="What's on your mind?" ng-model="obj.body"></textarea>
+              <div id="button-holder">
+                  <div class="small-submit-right" ng-click="postStatus(obj); getStatus()">
+                      Submit
+                  </div>
+              </div>
+            </div>
+Add Comment code block ///////////////// -->
+
+          </div>
+        </div>
+      </section>
+    </section>
+
+<footer></footer>
+</section>

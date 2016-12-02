@@ -1,0 +1,73 @@
+<navbar></navbar>
+<section class="edit-container">
+
+  <section class="left-menu-box">
+    <a ui-sref="edit"><p class="left-item-top"><span>Edit Profile</span></p></a>
+    <a href=""><p class="left-item">Change Password</p></a>
+    <a href=""><p class="left-item">Email Preferences</p></a>
+  </section>
+
+  <section class="right-menu-box">
+
+    <div class="edit-box-top" ng-repeat="data in editFeed" ng-if="$index == 0">
+        <aside class="edit-name">
+          <img class="edit-pic" ng-src="{{data.photo}}">
+        </aside>
+      <h2 class="edit-username">{{editFeed.username}}{{editFeed.photo._id}}</h2>
+    </div>
+
+    <div class="edit-box-left">
+      <aside class="edit-name">Name</aside>
+      <div class="edit-field" type="text" name="name" value="" contenteditable><span class="signup-words">{{editFeed.name}}</span></div><br>
+    </div>
+
+    <div class="edit-box-left">
+      <aside class="edit-name">Username</aside>
+      <div class="edit-field" type="text" name="name" value="" contenteditable><span class="signup-words">{{editFeed.username}}</span></div><br>
+    </div>
+
+    <div class="edit-box-left">
+      <aside class="edit-name">Password</aside>
+      <div class="edit-field" type="password" name="name" value="" contenteditable><span class="signup-words">Password</span></div><br>
+    </div>
+
+    <div class="edit-box-left">
+      <aside class="edit-name">Bio</aside>
+      <div class="edit-bio" type="text" name="name" value="" contenteditable><span class="signup-words">{{editFeed.bio}}</span></div><br>
+    </div>
+
+    <div class="edit-box-left">
+      <aside class="edit-name"></aside>
+      <div class="edit-box-left">Private Information</div>
+    </div>
+
+    <div class="edit-box-left">
+      <aside class="edit-name">Email</aside>
+      <div class="edit-field" type="text" name="name" value="" contenteditable><span class="signup-words">{{editFeed.email}}</span></div><br>
+    </div>
+
+    <div class="edit-box-left">
+      <aside class="edit-name">Phone</aside>
+      <div class="edit-field" type="text" name="name" value="" contenteditable><span class="signup-words">Phone</span></div><br>
+    </div>
+
+    <div class="edit-box-left">
+      <aside class="edit-name">Gender</aside>
+        <div class="gender-dropdown" name="select gender">
+          <span class="signup-words">{{editFeed.gender}}<div></div></span>
+          <div class="dropdown-content">
+              <option value="Male">Male</option>
+              <option value="Female">Female</option>
+          </div>
+        </div>
+    </div>
+    <div class="edit-box-left">
+      <aside class="edit-name"></aside>
+      <button class="edit-button" ng-click="updateProfile(user, id)" type="button" name="button"><span class="button-words">Submit</span></button>
+    </div>
+
+  </section>
+
+</section>
+
+<footer></footer>

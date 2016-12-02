@@ -1,0 +1,31 @@
+<section class="login-container">
+
+  <section class="left-box">
+    <img src="" alt="" />
+    <div class="login-slide">
+      <img src="../img/slide4.jpg" alt="" />
+    </div>
+  </section>
+
+  <section class="right-box">
+    <div class="signup-box">
+
+      <input ng-model="user.email" class="input-field" type="text" placeholder="Email"><span class="signup-words"></span><br>
+      <input ng-model="user.name" class="input-field" type="text" placeholder="Full Name"><span class="signup-words"></span><br>
+      <input ng-model="user.username" class="input-field" type="text" placeholder="Username"><span class="signup-words"></span><br>
+      <input ng-model="user.password" class="input-field" type="password" placeholder="Password"><span class="signup-words"></span><br>
+      <button class="input-button" type="button" name="button" ng-click="seeUser(user)" ><span class="button-words">Sign up</span></button>
+
+      <hr class="style-eight"> or
+    </div>
+    <div class="lower-input-box">
+      <p>
+        Already have an account? <a ui-sref="login"><span class="login-words">Log in</span></a>
+      </p>
+    </div>
+
+  </section>
+
+</section>
+
+<footer></footer>

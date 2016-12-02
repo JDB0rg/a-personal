@@ -1,0 +1,84 @@
+.user-container{
+  width: auto;
+  height: auto;
+  margin: auto;
+}
+.user-feed-info{
+  width: 68%;
+  height: auto;
+  margin: auto;
+}
+.user-pic{
+  border-radius: 50%;
+  border: 0px solid white;
+  width: 150px;
+  height: 150px;
+}
+.profile-pic-box{
+  margin: 45px 0px 40px 0px ;
+  width: 230px;
+  display: inline-block;
+}
+.profile-info{
+  padding-left: 23px;
+  margin-top: 50px;
+  display: inline-block;
+  height: auto;
+}
+.profile-info p{
+  margin: 0px;
+  padding-bottom: 15px;
+}
+.profile-user-info{
+  font-size: 22px;
+}
+.edit-prof-button{
+  outline: none;
+  color: lightgray;
+  border: 0px solid white;
+  background-color: white;
+  font-size: 16px;
+  font-family: Source Sans Pro;
+  margin: 16px 0px 0px 20px;
+  padding: 0px;
+}
+.gallery{
+  margin: auto;
+  width: 912px;
+  display: flex;
+  flex-direction: row-reverse;
+  flex-flow: wrap;
+  justify-content: center;
+}
+.gallery-pic{
+  margin: 15px;
+  max-width: 270px;
+  max-height: 270px;
+  object-fit: cover;
+}
+.gallery-pic-change{
+  background-color: black;
+  opacity: 0.5;
+  margin: 0px;
+  max-width: 850px;
+  max-height: 850px;
+  object-fit: cover;
+}
+.button-box{
+  width: 100%;
+  height: auto;
+  margin: auto;
+  text-align: center;
+}
+.load-button{
+  outline: none;
+  border-radius: 50%;
+  border: 2px solid #3897f0;
+  color: #3897f0;
+  font-size: 13px;
+  width: 120px;
+  height: 120px;
+  background-color: white;
+  margin: 37px 0px 30px 0px;
+  text-align: center;
+}
