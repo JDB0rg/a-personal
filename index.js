@@ -7,7 +7,7 @@ var config = require('./config.js');
 var sessions = require('express-session')
 
 ////Mongo DB Connection
-mongoose.connect(process.env.MONGOLAB_URI || 'mongodb://localhost/instapic');
+mongoose.connect(process.env.MONGOLAB_URI || 'mongodb://localhost/insta-mongoose');
 
 //// controllers ///////////
 var userCtrl = require('./js/userCtrl')
@@ -43,7 +43,7 @@ app.use(passport.session());
 /////////////////////////////////
 
 mongoose.set('debug', true);
-mongoose.connect('mongodb://localhost/insta-mongoose');
+// mongoose.connect('mongodb://localhost/insta-mongoose');
 
 //// bring in models
 // var userScema = require('./userSchema')
