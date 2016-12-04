@@ -6,6 +6,9 @@ var mongoose = require('mongoose');
 var config = require('./config.js');
 var sessions = require('express-session')
 
+////Mongo DB Connection
+mongoose.connect(process.env.MONGOLAB_URI || 'mongodb://localhost/instapic');
+
 //// controllers ///////////
 var userCtrl = require('./js/userCtrl')
 var photoCtrl = require('./js/photoCtrl')
