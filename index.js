@@ -7,7 +7,7 @@ var config = require('./config.js');
 var sessions = require('express-session')
 
 ////Mongo DB Connection
-mongoose.connect(process.env.MONGOLAB_URI || 'mongodb://localhost/insta-mongoose');
+mongoose.connect(process.env.MONGOLAB_URI || 'mongodb://localhost/mongodb');
 
 //// controllers ///////////
 var userCtrl = require('./js/userCtrl')
