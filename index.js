@@ -87,5 +87,5 @@ app.post('/api/photo/:id', photoCtrl.updateHearts);
 ////listening to server
 var port = 4000;
 app.listen(port, function(){
-  console.log("Started server on port", port);
-})
+  console.log("Started server on port" + port);
+});
