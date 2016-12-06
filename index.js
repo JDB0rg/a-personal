@@ -8,7 +8,7 @@ var sessions = require('express-session')
 
 ////Mongo DB Connection
 // mongoose.connect(process.env.MONGOLAB_URI || 'mongodb://localhost/mongodb');
-mongoose.connect(process.env.MONGODB_URI || 'mongodb://heroku_zcf61m44:7v6gn4akieic11h4pkppv2dkal@ds119608.mlab.com:19608/heroku_zcf61m44');
+mongoose.connect(process.env.MONGOLAB_URI || 'mongodb://localhost/mongodb');
 
 //// controllers ///////////
 var userCtrl = require('./js/userCtrl')
