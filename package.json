@@ -1,7 +1,6 @@
 {
   "name": "a-personal",
   "version": "1.0.0",
-  "description": "",
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
@@ -26,5 +25,16 @@
   "engines": {
     "node": "6.9.1"
   },
-  "devDependencies": {}
+  "devDependencies": {
+    "grunt": "^1.0.1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/JDB0rg/a-personal.git"
+  },
+  "bugs": {
+    "url": "https://github.com/JDB0rg/a-personal/issues"
+  },
+  "homepage": "https://github.com/JDB0rg/a-personal#readme",
+  "description": ""
 }
